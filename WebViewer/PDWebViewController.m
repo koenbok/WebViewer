@@ -39,6 +39,11 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+}
+
 - (void)loadUrl:(NSString *)urlString
 {
     

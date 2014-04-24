@@ -34,6 +34,8 @@
     NSString *url = [[NSUserDefaults standardUserDefaults] stringForKey:@"location"];
     
     self.locationTextField.text = url;
+
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
